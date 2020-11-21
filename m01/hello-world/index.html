@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Hello World</h1>
-    <div id="app"></div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.1.0/react-dom.js"></script>
-    <script>
-        // Exemplo de como aninhar elementos
-        var h1 = React.createElement('h1', null, React.createElement('span', null, 'Texto span'))
-        ReactDOM.render(h1, document.getElementById('app'))
-        console.log(h1)
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/15.1.0/react-dom.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <script type="text/babel">
+    var Title = React.createClass({
+      render: function () {
+        return (
+          <div>
+            <h1>Titulo</h1>
+            <span>Hello World title</span>
+          </div>
+        )
+      }
+    })
+    ReactDOM.render(
+      <Title />,
+      document.getElementById("app")
+    )
+
+  </script>
+
+</body>
+
 </html>
