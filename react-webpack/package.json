@@ -1,3 +1,6 @@
 {
-    
+  "devDependencies": {
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^3.11.1"
+  }
 }
