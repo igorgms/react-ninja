@@ -7,9 +7,8 @@ const App = React.createClass({
   render: function () {
     return (
       <div className="container">
-        <Title name="Igor Gomes Firmino" />
-        <label htmlFor="input">Input</label>
-        <input type="text" id="input" />
+        {/* para passar um numero, array, objeto ou qualquer outro tipo de dado que não seja string é ncessário passá-lo entre chaves, igual o exemplo abaixo */}
+        <Title name="Igor" lastname={1} />
       </div>
     );
   },
